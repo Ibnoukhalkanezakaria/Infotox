@@ -22,16 +22,18 @@ const HeroHome = () => {
           Get started for free
         </PrimaryButton>
         <div>
+          <div className="z-40 relative">
+            <img
+              src={heroImage}
+              alt="heroImage pt-8"
+              className="w-[1100px]  m-auto "
+            />
+          </div>
           <img
-            src={heroImage}
-            alt="heroImage pt-8"
-            className="w-[1100px] z-40 relative m-auto "
-          />
-          {/* <img
             src={icon3}
             alt=""
-            className="absolute right-[-30px] bottom-10 max-w-[100%]"
-          /> */}
+            className="absolute z-1 right-[-30px] bottom-10 max-w-[100%]"
+          />
         </div>
       </div>
     </div>

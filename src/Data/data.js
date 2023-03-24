@@ -31,5 +31,37 @@ export const ShippingSectionData = {
   title: "Do your shipping hassel free!",
   description:
     "Increase your profitability with the #1 fastest growing software & CRM for moving companies.",
-  Lists: [],
+  increaseYourSales: [
+    {
+      option: "Effortless courier allocation",
+    },
+    {
+      option: "Widest coverage network",
+    },
+    {
+      option: "30+ Courier services",
+    },
+  ],
+  NoMonthlyCharges: [
+    {
+      option: "Effortless courier allocation",
+    },
+    {
+      option: "Widest coverage network",
+    },
+    {
+      option: "30+ Courier services",
+    },
+  ],
+  TakeInventoryOn: [
+    {
+      option: "Widest coverage network",
+    },
+    {
+      option: "220 Countries served globally",
+    },
+    {
+      option: "27,000+ Pincodes covered nation-wide",
+    },
+  ],
 };

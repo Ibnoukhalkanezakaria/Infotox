@@ -138,9 +138,16 @@ button {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
+.Wrapper2 {
+  --max-width: 1200px;
+  --padding: 2rem;
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
 
 @media (max-width: 486px) {
-  .Wrapper {
+  .Wrapper,
+  .Wrapper2 {
     --padding: 1rem;
   }
 }
@@ -167,4 +174,10 @@ button {
   .p120-section {
     padding-block: 60px;
   }
+}
+
+.translate-50 {
+  transform: translateX(-50%);
+  left: 50%;
+  top: 50%;
 }
