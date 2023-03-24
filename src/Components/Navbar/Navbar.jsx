@@ -22,7 +22,7 @@ const Navbar = () => {
           <div>
             <ul
               className={`duration-500 lg:flex lg:py-0 py-10 z-[-1] absolute lg:bg-transparent lg:h-auto bg-primary-clr left-0 lg:static w-full lg:w-auto ${
-                open ? "top-[104px]" : "top-[-480px]"
+                open ? "top-[104px]" : "top-[-490px]"
               } h-[]`}
               role="list"
               aria-label="nav-links"
@@ -41,7 +41,7 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <div className="flex gap-8 items-center">
+          <div className="flex md:gap-8 gap-2 items-center">
             <div>
               <span
                 onClick={() => setShow(!show)}
@@ -56,7 +56,7 @@ const Navbar = () => {
               </button>
             </div>
             <div
-              onClick={() => setOpen(true)}
+              onClick={() => setOpen(!open)}
               className="lg:hidden block bg-color3 p-4 rounded-xl"
             >
               <HiBars3 className="text-xl primary-clr" />
