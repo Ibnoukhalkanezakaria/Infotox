@@ -12,6 +12,7 @@
   --color4: #fbb431;
   --color5: #b1b8c3;
   --color7: #949aa6;
+  --color8: rgb(75, 80, 90);
   /* FonWeight */
   --fw-200: 200;
   --fw-300: 300;
@@ -75,6 +76,9 @@ button {
 .color7 {
   color: var(--color7);
 }
+.color8 {
+  color: var(--color8);
+}
 
 /* Background */
 
@@ -98,6 +102,9 @@ button {
 }
 .bg-color7 {
   background-color: var(--color7);
+}
+.bg-color8 {
+  background-color: var(--color8);
 }
 
 /* FontWeight */
@@ -130,6 +137,12 @@ button {
   --padding: 2rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+}
+
+@media (max-width: 486px) {
+  .Wrapper {
+    --padding: 1rem;
+  }
 }
 
 /* Section */
