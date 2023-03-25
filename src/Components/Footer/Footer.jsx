@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <p className="pt-20 max-w-[900px] leading-7">
+        <p className="sm:pt-20 pt-10 max-w-[900px] leading-7">
           © Ibnoukhalkane {today} Infotox. Design by Flowset, checkout the
           repository{" "}
           <a
