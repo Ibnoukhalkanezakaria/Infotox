@@ -17,7 +17,7 @@ const ShippingSection = () => {
   } = ShippingSectionData;
   return (
     <div className="bg-primary-clr p120-section">
-      <div className="Wrapper2 m-auto text-center flex flex-col justify-center">
+      <div className="Wrapper m-auto text-center flex flex-col justify-center">
         <h1 className="secondary-clr fw-600 md:text-5xl text-3xl m-auto max-w-[700px]">
           {title}
         </h1>
@@ -30,10 +30,10 @@ const ShippingSection = () => {
               <img src={image1} alt="image" />
             </div>
             <div className="text-left md:order-1">
-              <h2 className="secondary-clr fw-600 text-4xl max-w-[400px]">
+              <h2 className="secondary-clr fw-600 sm:text-5xl tex-4xl max-w-[400px]">
                 Increase your sales
               </h2>
-              <p className="color8 leading-7 pt-4 pb-8 max-w-[450px]">
+              <p className="color8 leading-7 pt-6 pb-8 max-w-[450px]">
                 Employ a powerful courier network and expand your reach globally
                 with instant access to pre-negotiated rates & services, all with
                 just one account.
@@ -54,13 +54,13 @@ const ShippingSection = () => {
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
             <div className="text-left order-one ">
-              <h2 className="secondary-clr fw-600 text-4xl max-w-[400px]">
-                Increase your sales
+              <h2 className="secondary-clr fw-600 sm:text-5xl tex-4xl max-w-[400px]">
+                No Monthly Charges
               </h2>
-              <p className="color8 leading-7 pt-4 pb-8 max-w-[450px]">
-                Employ a powerful courier network and expand your reach globally
-                with instant access to pre-negotiated rates & services, all with
-                just one account.
+              <p className="color8 leading-7 pt-6 pb-8 max-w-[450px]">
+                Pay only for what you ship, not a penny more. Shyplite functions
+                as your growth partner and not a liability. No subscription
+                cost.
               </p>
               {NoMonthlyCharges.map((item, i) => {
                 const { option } = item;
@@ -75,22 +75,22 @@ const ShippingSection = () => {
                 <Link to="/">Learn More</Link>
               </PrimaryButton>
             </div>
-            <div className="">
+            <div>
               <img src={image2} alt="image" />
             </div>
           </div>
-          <div className=" grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
-            <div className="">
+          <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
+            <div>
               <img src={image3} alt="image" />
             </div>
             <div className="text-left">
-              <h2 className="secondary-clr fw-600 text-4xl max-w-[400px]">
-                Increase your sales
+              <h2 className="secondary-clr fw-600 sm:text-5xl text-4xl max-w-[400px]">
+                Take inventory on
               </h2>
-              <p className="color8 leading-7 pt-4 pb-8 max-w-[450px]">
-                Employ a powerful courier network and expand your reach globally
-                with instant access to pre-negotiated rates & services, all with
-                just one account.
+              <p className="color8 leading-7 pt-6 pb-8 max-w-[450px]">
+                Easily identify packing (CP and PBO), add additional services,
+                crating, and photos as you seamlessly navigate from room to
+                room.
               </p>
               {TakeInventoryOn.map((item, i) => {
                 const { option } = item;
