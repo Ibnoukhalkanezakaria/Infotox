@@ -5,13 +5,13 @@ import stick3 from "../../../assets/Cta/icon-3.svg";
 
 const CtaSection = () => {
   return (
-    <div className="bg-secondary-clr p120-section relative">
+    <div className="bg-secondary-clr p120-section relative overflow-hidden">
       <img
         src={stick2}
         alt="stick"
         className="absolute right-[30%] bottom-10 "
       />
-      <img src={stick3} alt="stick" className="absolute right-10" />
+      <img src={stick3} alt="stick" className="absolute right-[-50px]" />
       <div className="Wrapper text-center">
         <h1 className="relative primary-clr sm:text-5xl text-4xl  fw-600 text-center max-w-[700px] sm:leading-[80px] m-auto">
           Let’s see Infotux in action all for free!

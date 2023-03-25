@@ -8,10 +8,11 @@ import icon3 from "../../../assets/HeroHome/icon-3.svg";
 const HeroHome = () => {
   const { title, description, heroImage } = HeroHomeData;
   return (
-    <div className="bg-secondary-clr p100-section">
+    <div className="bg-secondary-clr p100-section overflow-hidden">
       <div className="Wrapper text-center relative">
         <img src={icon1} alt="icon1" className="absolute right-0 top-12" />
         <img src={icon2} alt="icon1" className="absolute left-0 top-[20%]" />
+        <img src={icon3} alt="icon1" className="absolute left-0 top-[20%]" />
         <h1 className="relative z-40 primary-clr fw-600 md:text-5xl text-3xl m-auto max-w-[800px]">
           {title}
         </h1>
