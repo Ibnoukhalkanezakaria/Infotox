@@ -124,3 +124,58 @@ export const IntregrateSectionData = {
     },
   ],
 };
+
+export const SliderData = {
+  List: [
+    {
+      cmt: "Infotox has really helped us reduced our operation cost by whooping 35% annually. Which we could never have archived if it was not Infotox helping us achieving  it. ",
+      name: "Arman mallik",
+      jobTitle: "Co-founder Dairy Milk",
+    },
+    {
+      cmt: "Infotox has really helped us reduced our operation cost by whooping 35% annually. Which we could never have archived if it was not Infotox helping us achieving  it. ",
+      name: "Arman mallik",
+      jobTitle: "Co-founder Dairy Milk",
+    },
+    {
+      cmt: "Infotox has really helped us reduced our operation cost by whooping 35% annually. Which we could never have archived if it was not Infotox helping us achieving  it. ",
+      name: "Arman mallik",
+      jobTitle: "Co-founder Dairy Milk",
+    },
+    {
+      cmt: "Infotox has really helped us reduced our operation cost by whooping 35% annually. Which we could never have archived if it was not Infotox helping us achieving  it. ",
+      name: "Arman mallik",
+      jobTitle: "Co-founder Dairy Milk",
+    },
+  ],
+};
+
+export const RunsSectionData = {
+  title: "We make sure the software runs well",
+  description:
+    "If your moving company needs something that SmartMoving cannot provide, we'll be the first to tell you. We want our customers (and you!) to succeed. Get in touch today and see if Infotox works for you!",
+  image:
+    "https://assets.website-files.com/629461b12290e99430a4f834/629461b12290e901e8a4f892_Value%20Image-1.png",
+  List: [
+    {
+      name: "Great B2B Support",
+      description:
+        "Choose us for effortless part-truck shipping of your large orders & eCommerce shipping.",
+    },
+    {
+      name: "Great B2B Support",
+      description:
+        "Choose us for effortless part-truck shipping of your large orders & eCommerce shipping.",
+    },
+    {
+      name: "Great B2B Support",
+      description:
+        "Choose us for effortless part-truck shipping of your large orders & eCommerce shipping.",
+    },
+    {
+      name: "Great B2B Support",
+      description:
+        "Choose us for effortless part-truck shipping of your large orders & eCommerce shipping.",
+    },
+  ],
+};

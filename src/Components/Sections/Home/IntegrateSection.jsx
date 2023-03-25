@@ -5,8 +5,8 @@ const IntegrateSection = () => {
   const { title, List, description } = IntregrateSectionData;
   return (
     <div className="bg-primary-clr p100-section">
-      <div className="Wrapper2 ">
-        <h1 className="secondary-clr sm:text-4xl text-3xl fw-700 text-center max-w-[600px] leading-[60px] m-auto">
+      <div className="Wrapper">
+        <h1 className="secondary-clr sm:text-4xl text-3xl fw-700 text-center max-w-[600px] sm:leading-[60px] m-auto">
           {title}
         </h1>
         <p className="text-center color8 m-auto max-w-[600px] py-6 leading-7 fw-500">

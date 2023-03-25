@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
             <div
               onClick={() => setOpen(!open)}
-              className="lg:hidden block bg-color3 p-4 rounded-xl"
+              className="cursor-pointer lg:hidden block bg-color3 p-4 rounded-xl"
             >
               <HiBars3 className="text-xl primary-clr" />
             </div>

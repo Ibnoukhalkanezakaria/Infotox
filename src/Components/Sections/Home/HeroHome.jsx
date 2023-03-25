@@ -32,7 +32,7 @@ const HeroHome = () => {
           <img
             src={icon3}
             alt=""
-            className="absolute z-1 right-[-30px] bottom-10 max-w-[100%]"
+            className="absolute z-1 right-[-10px] bottom-10 max-w-[100%]"
           />
         </div>
       </div>

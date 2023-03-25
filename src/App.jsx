@@ -5,6 +5,7 @@ import Features from "./Pages/Features/Features";
 import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
 import Integration from "./Pages/Integration/Integration";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/integration" element={<Integration />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const MaximumSection = () => {
     <div className="bg-secondary-clr p50-section">
       <div className="Wrapper2 grid md:grid-cols-2 items-center grid-cols-1 p100-section gap-8 ">
         <div className="text-left">
-          <h2 className="primary-clr fw-600 text-5xl leading-[80px] max-w-[500px]">
+          <h2 className="primary-clr fw-600 sm:text-5xl text-4xl sm:leading-[80px] max-w-[500px]">
             Get maximum growth with us
           </h2>
           <p className="text-[#949AA6] leading-7 pt-8 pb-8 max-w-[450px]">
