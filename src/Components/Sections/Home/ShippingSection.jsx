@@ -53,7 +53,7 @@ const ShippingSection = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
-            <div className="text-left">
+            <div className="text-left order-one ">
               <h2 className="secondary-clr fw-600 text-4xl max-w-[400px]">
                 Increase your sales
               </h2>
