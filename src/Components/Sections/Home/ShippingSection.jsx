@@ -7,6 +7,10 @@ import image1 from "../../../assets/Shipping/image1.svg";
 import image2 from "../../../assets/Shipping/image2.svg";
 import image3 from "../../../assets/Shipping/image3.svg";
 
+import icon1 from "../../../assets/Shipping/icon1.svg";
+import icon2 from "../../../assets/Shipping/icon2.svg";
+import icon3 from "../../../assets/Shipping/icon3.svg";
+
 const ShippingSection = () => {
   const {
     title,
@@ -16,7 +20,7 @@ const ShippingSection = () => {
     TakeInventoryOn,
   } = ShippingSectionData;
   return (
-    <div className="bg-primary-clr p120-section">
+    <div className="bg-primary-clr p120-section overflow-hidden">
       <div className="Wrapper m-auto text-center flex flex-col justify-center">
         <h1 className="secondary-clr fw-600 md:text-5xl text-3xl m-auto max-w-[700px]">
           {title}
@@ -27,7 +31,16 @@ const ShippingSection = () => {
         <div className="flex flex-col justify-center m-auto">
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16">
             <div>
-              <img src={image1} alt="image" />
+              <div className="relative ">
+                <img
+                  src={icon1}
+                  alt="icon"
+                  className="absolute bottom-[-15%] left-[-15%] z-[1]"
+                />
+                <div className="relative z-10">
+                  <img src={image1} alt="image" />
+                </div>
+              </div>
             </div>
             <div className="text-left md:order-1">
               <h2 className="secondary-clr fw-600 sm:text-5xl tex-4xl max-w-[400px]">
@@ -76,12 +89,29 @@ const ShippingSection = () => {
               </PrimaryButton>
             </div>
             <div>
-              <img src={image2} alt="image" />
+              <div>
+                <div className="relative">
+                  <img src={image2} alt="image" className="z-50 relative" />
+                  <img
+                    src={icon2}
+                    alt="icon"
+                    className="absolute top-0 left-[-30%] z-0
+              "
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
             <div>
-              <img src={image3} alt="image" />
+              <div className="relative">
+                <img src={image3} alt="image" className="relative z-10" />
+                <img
+                  src={icon3}
+                  alt="icon"
+                  className="absolute right-[-20%] top-[-15%] z-1"
+                />
+              </div>
             </div>
             <div className="text-left">
               <h2 className="secondary-clr fw-600 sm:text-5xl text-4xl max-w-[400px]">
