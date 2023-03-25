@@ -13,7 +13,7 @@ const CtaSection = () => {
       />
       <img src={stick3} alt="stick" className="absolute right-[-50px]" />
       <div className="Wrapper text-center">
-        <h1 className="relative primary-clr sm:text-5xl text-4xl  fw-600 text-center max-w-[700px] sm:leading-[80px] m-auto">
+        <h1 className="relative primary-clr sm:text-5xl text-4xl fw-600 text-center max-w-[780px] sm:leading-[80px] m-auto">
           Let’s see Infotux in action all for free!
         </h1>
         <p className="text-center color7 m-auto max-w-[400px] py-6 leading-7 fw-500">
