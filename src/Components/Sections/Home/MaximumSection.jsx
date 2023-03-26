@@ -12,7 +12,7 @@ const MaximumSection = () => {
     <div className="p50-section bg-secondary-clr overflow-hidden">
       <div className="Wrapper2  flex justify-center flex-row m-auto">
         <div className="m-auto md:grid-cols-2 grid-cols-1 items-center grid justify-center  p100-section gap-8 ">
-          <div className="">
+          <div>
             <h2 className="primary-clr fw-600 sm:text-5xl text-4xl sm:leading-[80px] max-w-[500px]">
               Get maximum growth with us
             </h2>
@@ -31,7 +31,7 @@ const MaximumSection = () => {
               );
             })}
           </div>
-          <div className=" relative rounded-3xl bg-[#F3F5F9] h-[550px] max-w-[100%] w-[550px]">
+          <div className=" relative rounded-3xl bg-[#F5F7FB]  h-[550px] max-w-[100%] w-[550px]">
             <img
               src={image1}
               alt="image"
@@ -41,12 +41,12 @@ const MaximumSection = () => {
               <img
                 src={image2}
                 alt="image"
-                className="rounded-3xl absolute bottom-10
+                className="rounded-3xl absolute bottom-10 w-[90%]
           "
               />
             </div>
             <img src={icon1} alt="" className="absolute bottom-0 left-[-15%]" />
-            <img src={icon2} alt="" className="absolute right-0 top-[-10%]" />
+            <img src={icon2} alt="" className="absolute right-0 top-[-10%] " />
           </div>
         </div>
       </div>
@@ -55,4 +55,3 @@ const MaximumSection = () => {
 };
 
 export default MaximumSection;
-// grid md:grid-cols-2 items-center grid-cols-1

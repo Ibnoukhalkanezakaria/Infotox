@@ -66,7 +66,7 @@ const ShippingSection = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16 ">
-            <div className="text-left order-one ">
+            <div className="text-left  ">
               <h2 className="secondary-clr fw-600 sm:text-5xl tex-4xl max-w-[400px]">
                 No Monthly Charges
               </h2>
@@ -91,11 +91,11 @@ const ShippingSection = () => {
             <div>
               <div>
                 <div className="relative">
-                  <img src={image2} alt="image" className="z-50 relative" />
+                  <img src={image2} alt="image" className="z-10 relative" />
                   <img
                     src={icon2}
                     alt="icon"
-                    className="absolute top-0 left-[-30%] z-0
+                    className="absolute top-0 left-[-30%]
               "
                   />
                 </div>

@@ -62,34 +62,26 @@ const Navbar = () => {
               <HiBars3 className="text-xl primary-clr" />
             </div>
           </div>
-          <div
-            className={`translate-50 z-[999] duration-500 ${
-              show ? "block" : "hidden"
-            } absolute  bg-primary-clr w-[350px]  max-w-[100%] rounded-2xl`}
-          >
-            <div className="flex p-4 justify-between items-center">
-              <span className="secondary-clr fw-600">Your Cart</span>
-              <span
-                className="secondary-clr fw-600 cursor-pointer"
-                onClick={() => setShow(false)}
-              >
-                <AiOutlineClose />
-              </span>
-            </div>
-            <hr />
-            <div className="min-h-[220px] flex justify-center items-center">
-              <div className="">
-                <span>No items found.</span>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`duration-500 ${
-              show ? "block" : "hidden"
-            } z-[50] bg-[#06070A] opacity-50 fixed left-0 w-full top-0 min-h-[100vh] right-0 bottom-0`}
-          ></div>
         </div>
       </nav>
+      <div
+        className={`bg-[#000000af] duration-500 fixed top-0 w-full h-screen ${
+          show ? "hidden opacity-0" : "block opacity-100"
+        }`}
+      >
+        <div className="duration-500 bg-primary-clr absolute w-[500px] max-w-[100%] top-[50%] rounded-3xl left-[50%] translate-50">
+          <div className="flex justify-between items-center p-6 ">
+            <span className="secondary-clr text-3xl fw-600">Your Cart</span>
+            <div onClick={() => setShow(!show)}>
+              <AiOutlineClose className="text-2xl cursor-pointer" />
+            </div>
+          </div>
+          <hr />
+          <div className="h-[250px] flex justify-center items-center">
+            <span>No items found.</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
