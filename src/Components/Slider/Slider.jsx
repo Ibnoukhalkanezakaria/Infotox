@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -18,6 +20,16 @@ import logo from "../../assets/Author.svg";
 
 const Slider = () => {
   const { List } = SliderData;
+
+  const SlideRef = useRef();
+
+  const handleNext = () => {
+    SlideRef.current.swiper.slideNext();
+  };
+  const handlePrev = () => {
+    SlideRef.current.swiper.slidePrev();
+  };
+
   return (
     <div className="bg-secondary-clr p100-section overflow-hidden">
       <div className="Wrapper">
@@ -30,13 +42,14 @@ const Slider = () => {
           Make it easy with Infonux.
         </p>
       </div>
-      <div className="Wrapper pt-6 ">
+      <div className="Wrapper relative pt-6 ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={30}
           slidesPerView={1}
           className="slider-swiper flex gap-4 overflow-visible"
           navigation={false}
+          ref={SlideRef}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -82,6 +95,18 @@ const Slider = () => {
             );
           })}
         </Swiper>
+        <div
+          onClick={() => handleNext()}
+          className="cursor-pointer absolute right-[0] top-[-20%] border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+        >
+          <BsArrowRight className="primary-clr fw-700 text-2xl" />
+        </div>
+        <div
+          onClick={() => handlePrev()}
+          className="cursor-pointer absolute right-[6%] top-[-20%] border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+        >
+          <BsArrowLeft className="primary-clr fw-700 text-2xl" />
+        </div>
       </div>
     </div>
   );
