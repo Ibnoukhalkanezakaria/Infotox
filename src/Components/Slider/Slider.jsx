@@ -36,13 +36,13 @@ const Slider = () => {
         <h2 className="sm:text-5xl text-4xl sm:leading-[80px] primary-clr fw-700">
           Why choose Infotox
         </h2>
-        <p className="text-[#949AA6] leading-7 pt-8 pb-8 max-w-[450px]">
+        <p className="text-[#949AA6] leading-7 pt-8 pb-14 max-w-[450px]">
           The journey of your package from the warehouse to your customer's
           doorstep is the most overwhelming aspect of the entire selling cycle –
           Make it easy with Infonux.
         </p>
       </div>
-      <div className="Wrapper relative pt-6 ">
+      <div className="Wrapper relative ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={30}
@@ -75,7 +75,7 @@ const Slider = () => {
             const { cmt, name, jobTitle } = item;
             return (
               <SwiperSlide key={i}>
-                <div className="primary-clr w-full sm:max-w-[400px] bg-primary-clr p-10 rounded-3xl">
+                <div className="mt-8 primary-clr w-full sm:max-w-[400px] bg-primary-clr p-10 rounded-3xl">
                   <q className="secondary-clr text-lg fw-600 leading-7">
                     {cmt}
                   </q>
@@ -95,17 +95,19 @@ const Slider = () => {
             );
           })}
         </Swiper>
-        <div
-          onClick={() => handleNext()}
-          className="cursor-pointer absolute right-[0] top-[-20%] border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
-        >
-          <BsArrowRight className="primary-clr fw-700 text-2xl" />
-        </div>
-        <div
-          onClick={() => handlePrev()}
-          className="cursor-pointer absolute right-[6%] top-[-20%] border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
-        >
-          <BsArrowLeft className="primary-clr fw-700 text-2xl" />
+        <div className="flex gap-6 absolute right-0 top-[-20%]">
+          <div
+            onClick={() => handlePrev()}
+            className="cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+          >
+            <BsArrowLeft className="primary-clr fw-700 text-2xl" />
+          </div>
+          <div
+            onClick={() => handleNext()}
+            className="cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+          >
+            <BsArrowRight className="primary-clr fw-700 text-2xl" />
+          </div>
         </div>
       </div>
     </div>
