@@ -2,6 +2,7 @@ import React from "react";
 import PrimaryButton from "../../Buttons/PrimaryButton";
 import stick2 from "../../../assets/Cta/icon-2.svg";
 import stick3 from "../../../assets/Cta/icon-3.svg";
+import { Link } from "react-router-dom";
 
 const CtaSection = () => {
   return (
@@ -20,9 +21,11 @@ const CtaSection = () => {
           Track all sales communication in one screen and make your potential
           customers feel heard.
         </p>
-        <PrimaryButton className="mt-6 relative">
-          Get started for free
-        </PrimaryButton>
+        <Link to="/pricing">
+          <PrimaryButton className="mt-6 relative">
+            Get started for free
+          </PrimaryButton>
+        </Link>
       </div>
     </div>
   );

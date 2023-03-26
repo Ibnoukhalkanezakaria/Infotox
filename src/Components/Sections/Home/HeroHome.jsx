@@ -5,6 +5,8 @@ import icon1 from "../../../assets/HeroHome/icon-1.svg";
 import icon2 from "../../../assets/HeroHome/icon-2.svg";
 import icon3 from "../../../assets/HeroHome/icon-3.svg";
 
+import { Link } from "react-router-dom";
+
 const HeroHome = () => {
   const { title, description, heroImage } = HeroHomeData;
   return (
@@ -18,9 +20,11 @@ const HeroHome = () => {
         <p className="relative z-40 color7 m-auto max-w-[500px] py-6 leading-7 fw-500">
           {description}
         </p>
-        <PrimaryButton className="mt-4 mb-14">
-          Get started for free
-        </PrimaryButton>
+        <Link to="/pricing">
+          <PrimaryButton className="mt-4 mb-14">
+            Get started for free
+          </PrimaryButton>
+        </Link>
         <div>
           <div className="z-40 relative">
             <img

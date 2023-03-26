@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
@@ -13,8 +13,6 @@ import "swiper/css/scrollbar";
 import { Pagination, Navigation, Scrollbar, A11y } from "swiper";
 
 import { SliderData } from "../../Data/data";
-
-import "./Slider.css";
 
 import logo from "../../assets/Author.svg";
 
@@ -98,15 +96,15 @@ const Slider = () => {
         <div className="flex gap-6 absolute right-0 top-[-20%]">
           <div
             onClick={() => handlePrev()}
-            className="cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+            className={`cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center`}
           >
-            <BsArrowLeft className="primary-clr fw-700 text-2xl" />
+            <BsArrowLeft className={`primary-clr fw-700 text-2xl `} />
           </div>
           <div
             onClick={() => handleNext()}
-            className="cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center"
+            className={`cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center`}
           >
-            <BsArrowRight className="primary-clr fw-700 text-2xl" />
+            <BsArrowRight className={`primary-clr fw-700 text-2xl  `} />
           </div>
         </div>
       </div>

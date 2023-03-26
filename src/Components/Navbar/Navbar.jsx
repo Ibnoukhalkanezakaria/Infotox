@@ -65,8 +65,8 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`bg-[#000000af] duration-500 fixed top-0 w-full h-screen ${
-          show ? "hidden opacity-0" : "block opacity-100"
+        className={`bg-[#000000af]  duration-500 fixed top-0 w-full h-screen ${
+          show ? "block" : "hidden"
         }`}
       >
         <div className="duration-500 bg-primary-clr absolute w-[500px] max-w-[100%] top-[50%] rounded-3xl left-[50%] translate-50">
