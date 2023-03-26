@@ -33,15 +33,36 @@ const Slider = () => {
       <div className="Wrapper pt-6 ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={20}
-          slidesPerView={3}
-          className="slider-swiper overflow-visible"
+          spaceBetween={30}
+          slidesPerView={1}
+          className="slider-swiper flex gap-4 overflow-visible"
+          navigation={false}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            390: {
+              slidesPerView: 1,
+            },
+            502: {
+              slidesPerView: 1.5,
+            },
+            802: {
+              slidesPerView: 2.5,
+            },
+            992: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {List.map((item, i) => {
             const { cmt, name, jobTitle } = item;
             return (
               <SwiperSlide key={i}>
-                <div className="primary-clr w-[380px] bg-primary-clr p-10 rounded-3xl">
+                <div className="primary-clr w-full sm:max-w-[400px] bg-primary-clr p-10 rounded-3xl">
                   <q className="secondary-clr text-lg fw-600 leading-7">
                     {cmt}
                   </q>
