@@ -179,3 +179,8 @@ export const RunsSectionData = {
     },
   ],
 };
+
+export const HeroFeaturesData = {
+  title: "Simple to use and packed with features",
+  description: "Know what works and leverage your data to constantly improve.",
+};

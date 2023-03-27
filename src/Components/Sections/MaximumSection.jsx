@@ -1,9 +1,9 @@
 import React from "react";
-import image1 from "../../../assets/maximum/img1.svg";
-import image2 from "../../../assets/maximum/img2.svg";
-import icon1 from "../../../assets/maximum/icon1.svg";
-import icon2 from "../../../assets/maximum/icon2.svg";
-import { MaximumSectionData } from "../../../Data/data";
+import image1 from "../../assets/maximum/img1.svg";
+import image2 from "../../assets/maximum/img2.svg";
+import icon1 from "../../assets/maximum/icon1.svg";
+import icon2 from "../../assets/maximum/icon2.svg";
+import { MaximumSectionData } from "../../Data/data";
 import { AiOutlineCheck } from "react-icons/ai";
 
 const MaximumSection = () => {

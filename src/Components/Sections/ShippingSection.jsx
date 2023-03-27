@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ShippingSectionData } from "../../../Data/data";
-import PrimaryButton from "../../Buttons/PrimaryButton";
+import { ShippingSectionData } from "../../Data/data";
+import PrimaryButton from "../Buttons/PrimaryButton";
 import { AiOutlineCheck } from "react-icons/ai";
-import image1 from "../../../assets/Shipping/image1.svg";
-import image2 from "../../../assets/Shipping/image2.svg";
-import image3 from "../../../assets/Shipping/image3.svg";
+import image1 from "../../assets/Shipping/image1.svg";
+import image2 from "../../assets/Shipping/image2.svg";
+import image3 from "../../assets/Shipping/image3.svg";
 
-import icon1 from "../../../assets/Shipping/icon1.svg";
-import icon2 from "../../../assets/Shipping/icon2.svg";
-import icon3 from "../../../assets/Shipping/icon3.svg";
+import icon1 from "../../assets/Shipping/icon1.svg";
+import icon2 from "../../assets/Shipping/icon2.svg";
+import icon3 from "../../assets/Shipping/icon3.svg";
 
 const ShippingSection = () => {
   const {

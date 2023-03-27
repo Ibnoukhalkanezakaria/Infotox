@@ -1,9 +1,9 @@
 import React from "react";
-import { HeroHomeData } from "../../../Data/data";
-import PrimaryButton from "../../Buttons/PrimaryButton";
-import icon1 from "../../../assets/HeroHome/icon-1.svg";
-import icon2 from "../../../assets/HeroHome/icon-2.svg";
-import icon3 from "../../../assets/HeroHome/icon-3.svg";
+import { HeroHomeData } from "../../Data/data";
+import PrimaryButton from "../Buttons/PrimaryButton";
+import icon1 from "../../assets/HeroHome/icon-1.svg";
+import icon2 from "../../assets/HeroHome/icon-2.svg";
+import icon3 from "../../assets/HeroHome/icon-3.svg";
 
 import { Link } from "react-router-dom";
 

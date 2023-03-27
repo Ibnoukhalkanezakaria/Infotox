@@ -1,5 +1,5 @@
 import React from "react";
-import { IntregrateSectionData } from "../../../Data/data";
+import { IntregrateSectionData } from "../../Data/data";
 
 const IntegrateSection = () => {
   const { title, List, description } = IntregrateSectionData;

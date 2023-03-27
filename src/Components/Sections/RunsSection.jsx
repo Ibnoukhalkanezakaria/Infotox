@@ -1,6 +1,8 @@
 import React from "react";
-import { RunsSectionData } from "../../../Data/data";
+import { RunsSectionData } from "../../Data/data";
 import { AiOutlineCheck } from "react-icons/ai";
+import icon1 from "../../assets/Runs/icon1.svg";
+import icon2 from "../../assets/Runs/icon2.svg";
 
 const RunsSection = () => {
   const { title, description, image, List } = RunsSectionData;
@@ -13,7 +15,19 @@ const RunsSection = () => {
         <p className="color8 max-w-[600px] leading-7 fw-500">{description}</p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-14 pt-16 items-center">
           <div>
-            <img src={image} alt="image" />
+            <div className="relative">
+              <img src={image} alt="image" className="z-40 relative" />
+              <img
+                src={icon1}
+                alt="icon"
+                className="absolute top-[-12%] left-[-15%] z-10"
+              />
+              <img
+                src={icon2}
+                alt="icon"
+                className="absolute right-[-5%] bottom-[-10%]"
+              />
+            </div>
           </div>
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-10">
             {List.map((item, i) => {

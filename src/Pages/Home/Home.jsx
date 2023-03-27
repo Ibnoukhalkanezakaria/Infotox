@@ -1,10 +1,10 @@
 import React from "react";
-import HeroHome from "../../Components/Sections/Home/HeroHome";
-import ShippingSection from "../../Components/Sections/Home/ShippingSection";
-import MaximumSection from "../../Components/Sections/Home/MaximumSection";
-import IntegrateSection from "../../Components/Sections/Home/IntegrateSection";
-import RunsSection from "../../Components/Sections/Home/RunsSection";
-import CtaSection from "../../Components/Sections/Home/CtaSection";
+import HeroHome from "../../Components/Sections/HeroHome";
+import ShippingSection from "../../Components/Sections/ShippingSection";
+import MaximumSection from "../../Components/Sections/MaximumSection";
+import IntegrateSection from "../../Components/Sections/IntegrateSection";
+import RunsSection from "../../Components/Sections/RunsSection";
+import CtaSection from "../../Components/Sections/CtaSection";
 import Slider from "../../Components/Slider/Slider";
 
 const Home = () => {
