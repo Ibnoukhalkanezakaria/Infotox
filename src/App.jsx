@@ -6,6 +6,8 @@ import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
 import Integration from "./Pages/Integration/Integration";
 import Footer from "./Components/Footer/Footer";
+import OneBlog from "./Components/Sections/OneBlog";
+import CtaSection from "./Components/Sections/CtaSection";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:oneItem" element={<OneBlog />} />
       </Routes>
+      <CtaSection />
       <Footer />
     </div>
   );

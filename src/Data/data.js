@@ -26,6 +26,15 @@ export const NavbarData = {
   ],
 };
 
+// LatestBlogs
+
+import Image1 from "../assets/Blog/img1.png";
+import Image2 from "../assets/Blog/img2.png";
+import Image3 from "../assets/Blog/img3.png";
+import Image4 from "../assets/Blog/img4.png";
+import Image5 from "../assets/Blog/img5.png";
+import Image6 from "../assets/Blog/img6.png";
+
 export const HeroHomeData = {
   title: "Manage your shipping from a single dashboard",
   description:
@@ -183,4 +192,144 @@ export const RunsSectionData = {
 export const HeroFeaturesData = {
   title: "Simple to use and packed with features",
   description: "Know what works and leverage your data to constantly improve.",
+};
+
+export const HeroIntegrateData = {
+  title: "Integrated with your favourite apps",
+  description:
+    "Increase your profitability with the #1 fastest growing software & CRM for moving companies. Do entre the integration you want for yourself",
+};
+
+export const HeroBlogData = {
+  title: "Resources to speed up your growth",
+  description:
+    "Increase your profitability with the #1 fastest growing software & CRM for moving companies.",
+};
+
+export const HeroPricingData = {
+  title: "Get started for free. Add a plan later.",
+  description: "You pay only for what you ship, not a penny more.",
+};
+
+export const PacksSectionData = {
+  List: [
+    {
+      plan: "Proffestional",
+      price: "$19",
+      description: "Reporting and organization for teams upto 10 team members",
+    },
+    {
+      plan: "Business",
+      price: "$39",
+      description: "Reporting and organization for teams upto 10 team members",
+    },
+    {
+      plan: "Enterprise",
+      price: "$99",
+      description: "Reporting and organization for teams upto 10 team members",
+    },
+  ],
+};
+
+export const FeaturesSectionData = {
+  PlanFeatures: [
+    {
+      name: "Projects",
+      Professional: true,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Main Delivery Network",
+      Professional: true,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Advance AI based tracking",
+      Professional: false,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Personal Trainee",
+      Professional: true,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Access to Elon’s satellite",
+      Professional: false,
+      Premium: false,
+      Entreprise: true,
+    },
+    {
+      name: "Personal Truck for Delivery",
+      Professional: true,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Premium Software support",
+      Professional: false,
+      Premium: true,
+      Entreprise: true,
+    },
+    {
+      name: "Access to user API",
+      Professional: false,
+      Premium: true,
+      Entreprise: true,
+    },
+  ],
+};
+
+export const LatestBlogsData = {
+  title: "Be update with our latest blogs",
+  description:
+    "News, tips and insight from our expert team. To keep them up-to-date with our resources.",
+  latestBlogs: [
+    {
+      id: "How-to-handle-client-transfers-in-Infotox",
+      imageCard: Image1,
+      title: "How to handle client transfers in Infotox",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+    {
+      id: "How-to-make-sure-your-package-goes-safe",
+      imageCard: Image2,
+      title: "How to make sure your package goes safe",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+    {
+      id: "How-DHL-manage-to-integrate-infotux",
+      imageCard: Image3,
+      title: "How DHL manage to integrate infotux",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+    {
+      id: "How-Fedex-beat-amazon-in-the-game-of-delivery",
+      imageCard: Image4,
+      title: "How Fedex beat amazon in the game of delivery",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+    {
+      id: "How-to-use-infotox-to-track-your-asset",
+      imageCard: Image5,
+      title: "How to use infotox to track your asset",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+    {
+      id: "5-essential-metrics-for-your-shipment-growth",
+      imageCard: Image6,
+      title: "5 essential metrics for your shipment growth",
+      description:
+        "Quis nostrud exercitation ullamco laboris commodo consequat.",
+    },
+  ],
 };

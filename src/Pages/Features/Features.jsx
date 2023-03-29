@@ -13,7 +13,6 @@ const Features = () => {
       <ShippingSection />
       <IntegrateSection />
       <RunsSection />
-      <CtaSection />
     </>
   );
 };

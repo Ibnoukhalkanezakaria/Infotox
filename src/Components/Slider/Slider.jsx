@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
+import icon1 from "../../assets/Slider/icon1.svg";
+import icon2 from "../../assets/Slider/icon2.svg";
+
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/css";
@@ -41,6 +44,16 @@ const Slider = () => {
         </p>
       </div>
       <div className="Wrapper relative ">
+        <img
+          src={icon1}
+          alt="icon"
+          className="left-[60%] absolute top-[-15%]"
+        />
+        <img
+          src={icon2}
+          alt="icon"
+          className="absolute left-[-5%] bottom-[-15%]"
+        />
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={30}

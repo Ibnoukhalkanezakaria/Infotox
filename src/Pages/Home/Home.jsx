@@ -16,7 +16,6 @@ const Home = () => {
       <IntegrateSection />
       <Slider />
       <RunsSection />
-      <CtaSection />
     </>
   );
 };
