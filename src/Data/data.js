@@ -290,35 +290,35 @@ export const LatestBlogsData = {
     "News, tips and insight from our expert team. To keep them up-to-date with our resources.",
   latestBlogs: [
     {
-      id: "How-to-handle-client-transfers-in-Infotox",
+      id: "handle-client-transfers-in-Infotox",
       imageCard: Image1,
       title: "How to handle client transfers in Infotox",
       description:
         "Quis nostrud exercitation ullamco laboris commodo consequat.",
     },
     {
-      id: "How-to-make-sure-your-package-goes-safe",
+      id: "make-sure-your-package-goes-safe",
       imageCard: Image2,
       title: "How to make sure your package goes safe",
       description:
         "Quis nostrud exercitation ullamco laboris commodo consequat.",
     },
     {
-      id: "How-DHL-manage-to-integrate-infotux",
+      id: "-manage-to-integrate-infotux",
       imageCard: Image3,
       title: "How DHL manage to integrate infotux",
       description:
         "Quis nostrud exercitation ullamco laboris commodo consequat.",
     },
     {
-      id: "How-Fedex-beat-amazon-in-the-game-of-delivery",
+      id: "ex-beat-amazon-in-the-game-of-delivery",
       imageCard: Image4,
       title: "How Fedex beat amazon in the game of delivery",
       description:
         "Quis nostrud exercitation ullamco laboris commodo consequat.",
     },
     {
-      id: "How-to-use-infotox-to-track-your-asset",
+      id: "use-infotox-to-track-your-asset",
       imageCard: Image5,
       title: "How to use infotox to track your asset",
       description:

@@ -16,8 +16,8 @@ const LatestBlogs = () => {
             {latestBlogs.map((item) => {
               const { imageCard, title, description, id } = item;
               return (
-                <Link to={`/blog/${id}`}>
-                  <div key={id}>
+                <div key={id}>
+                  <Link to={`/blog/${item.id}`}>
                     <div className="overflow-hidden rounded-2xl border border-orange max-w-[380px]">
                       <img
                         src={imageCard}
@@ -31,8 +31,8 @@ const LatestBlogs = () => {
                     <p className="max-w-[400px] leading-7 color8 fw-500">
                       {description}
                     </p>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               );
             })}
           </div>

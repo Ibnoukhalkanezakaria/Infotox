@@ -10,6 +10,7 @@ const Navbar = () => {
   const { navLinks } = NavbarData;
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
+
   return (
     <div className=" relative z-50">
       <nav className="bg-secondary-clr ">

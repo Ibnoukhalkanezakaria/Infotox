@@ -1,8 +1,12 @@
 import React from "react";
 import image from "../../assets/Blog/imageDetails1.png";
 import MoreBlogs from "../../Components/Sections/MoreBlogs";
+import { useParams } from "react-router-dom";
+import { LatestBlogsData } from "../../Data/data";
 
 const OneBlogDetails = () => {
+  const { latestBlogs } = LatestBlogsData;
+  const { oneItem } = useParams();
   return (
     <div className="p50-section">
       <div className="w-[900px] m-auto">
@@ -101,6 +105,7 @@ const OneBlogDetails = () => {
           marketing to thrive.
         </p>
       </div>
+      <MoreBlogs latestBlogs={latestBlogs} oneItem={oneItem} />
     </div>
   );
 };

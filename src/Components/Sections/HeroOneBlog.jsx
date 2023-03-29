@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { LatestBlogsData } from "../../Data/data";
 import icon1 from "../../assets/Blog/icon1.svg";
 import icon2 from "../../assets/Blog/icon2.svg";
-import MoreBlogs from "../../Components/Sections/MoreBlogs";
 const HeroOneBlog = () => {
   const { latestBlogs } = LatestBlogsData;
   const { oneItem } = useParams();
