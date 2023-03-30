@@ -5,12 +5,16 @@ import { Link } from "react-router-dom";
 import { HiBars3 } from "react-icons/hi2";
 import { FaShoppingCart } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { useGetStarted } from "../../Context/GetStartedContext";
+import ItemsInCart from "../../Components/Sections/ItemsInCart";
 
 const Navbar = () => {
+  console.log(<ItemsInCart />);
   const { navLinks } = NavbarData;
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
-
+  const { getItemsQuantity, id } = useGetStarted();
+  const quantity = getItemsQuantity(id);
   return (
     <div className=" relative z-50">
       <nav className="bg-secondary-clr ">
@@ -43,16 +47,19 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex md:gap-8 gap-2 items-center">
-            <div>
+            <div className="relative cursor-pointer">
               <span
                 onClick={() => setShow(!show)}
-                className="primary-clr fw-600 text-lg flex gap-2 cursor-pointer"
+                className="primary-clr fw-600 text-lg flex gap-4 "
               >
                 <FaShoppingCart /> Cart
               </span>
+              <div className="absolute left-[15%] top-[40%] quantity w-5 text-[14px] h-5 rounded-full flex items-center justify-center bg-primary-clr">
+                <span className="secondary-clr">{quantity}</span>
+              </div>
             </div>
             <div>
-              <button className="secondary-clr bg-primary-clr py-5 px-5 text-lg fw-600 rounded-2xl sm:block hidden">
+              <button className="hover:opacity-60 duration-300 secondary-clr bg-primary-clr py-5 px-5 text-lg fw-600 rounded-2xl sm:block hidden">
                 Get Started
               </button>
             </div>
@@ -66,7 +73,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`bg-[#000000af]  duration-500 fixed top-0 w-full h-screen ${
+        className={`bg-[#000000af] duration-500 fixed top-0 w-full h-screen ${
           show ? "block" : "hidden"
         }`}
       >
@@ -79,7 +86,8 @@ const Navbar = () => {
           </div>
           <hr />
           <div className="h-[250px] flex justify-center items-center">
-            <span>No items found.</span>
+            {/* <span>No items found.</span> */}
+            <ItemsInCart />
           </div>
         </div>
       </div>

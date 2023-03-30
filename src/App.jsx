@@ -8,21 +8,24 @@ import Integration from "./Pages/Integration/Integration";
 import Footer from "./Components/Footer/Footer";
 import OneBlog from "./Components/Sections/OneBlog";
 import CtaSection from "./Components/Sections/CtaSection";
+import GetStartedProvider from "./Context/GetStartedContext";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/integration" element={<Integration />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:oneItem" element={<OneBlog />} />
-      </Routes>
-      <CtaSection />
-      <Footer />
+      <GetStartedProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/integration" element={<Integration />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:oneItem" element={<OneBlog />} />
+        </Routes>
+        <CtaSection />
+        <Footer />
+      </GetStartedProvider>
     </div>
   );
 }
