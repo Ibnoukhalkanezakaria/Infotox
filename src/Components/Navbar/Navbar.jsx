@@ -6,15 +6,16 @@ import { HiBars3 } from "react-icons/hi2";
 import { FaShoppingCart } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useGetStarted } from "../../Context/GetStartedContext";
-import ItemsInCart from "../../Components/Sections/ItemsInCart";
+import InsideCart from "../Sections/InsideCart";
+
+import PrimaryButton from "../Buttons/PrimaryButton";
 
 const Navbar = () => {
-  console.log(<ItemsInCart />);
   const { navLinks } = NavbarData;
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
-  const { getItemsQuantity, id } = useGetStarted();
-  const quantity = getItemsQuantity(id);
+  const [disabled, setdisabled] = useState(false);
+  const { cartQuantity } = useGetStarted();
   return (
     <div className=" relative z-50">
       <nav className="bg-secondary-clr ">
@@ -46,16 +47,16 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <div className="flex md:gap-8 gap-2 items-center">
+          <div
+            onClick={() => setShow(!show)}
+            className="flex md:gap-8 gap-2 items-center"
+          >
             <div className="relative cursor-pointer">
-              <span
-                onClick={() => setShow(!show)}
-                className="primary-clr fw-600 text-lg flex gap-4 "
-              >
+              <span className="primary-clr fw-600 text-lg flex gap-4 ">
                 <FaShoppingCart /> Cart
               </span>
               <div className="absolute left-[15%] top-[40%] quantity w-5 text-[14px] h-5 rounded-full flex items-center justify-center bg-primary-clr">
-                <span className="secondary-clr">{quantity}</span>
+                <span className="secondary-clr">{cartQuantity}</span>
               </div>
             </div>
             <div>
@@ -73,22 +74,57 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`bg-[#000000af] duration-500 fixed top-0 w-full h-screen ${
+        className={`bg-[#000000af]  duration-500 fixed top-0 w-full h-screen ${
           show ? "block" : "hidden"
         }`}
       >
-        <div className="duration-500 bg-primary-clr absolute w-[500px] max-w-[100%] top-[50%] rounded-3xl left-[50%] translate-50">
+        <div className="overflow-hidden duration-500 bg-primary-clr absolute w-[500px] max-w-[100%] top-[50%] rounded-3xl left-[50%] translate-50">
           <div className="flex justify-between items-center p-6 ">
             <span className="secondary-clr text-3xl fw-600">Your Cart</span>
             <div onClick={() => setShow(!show)}>
               <AiOutlineClose className="text-2xl cursor-pointer" />
             </div>
           </div>
-          <hr />
-          <div className="h-[250px] flex justify-center items-center">
-            {/* <span>No items found.</span> */}
-            <ItemsInCart />
+          <div className="h-[300px] overflow-auto border-t-[1px] border-b-[1px] border-[#8f8f8f79]">
+            {cartQuantity > 0 ? (
+              <div>
+                <InsideCart />
+              </div>
+            ) : (
+              <div className="h-[250px] flex justify-center items-center">
+                <span>No items found.</span>
+              </div>
+            )}
           </div>
+          {cartQuantity > 0 ? (
+            <div className="py-10 px-8">
+              <div className="flex justify-between">
+                <div>
+                  <span>Subtotal:</span>
+                </div>
+                <div>
+                  <span className="secondary-clr fw-600 text-lg block">
+                    $1,199.00 USD
+                  </span>
+                </div>
+              </div>
+              <PrimaryButton
+                onClick={() => setdisabled(true)}
+                className="flex justify-center m-auto mt-8 w-full"
+              >
+                Continue to Checkout
+              </PrimaryButton>
+              <p
+                className={`text-center pt-6 text-[#DC4544] ${
+                  disabled ? "block" : "hidden"
+                }`}
+              >
+                Checkout is disabled on this site.
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

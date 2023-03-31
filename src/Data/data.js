@@ -214,19 +214,19 @@ export const HeroPricingData = {
 export const PacksSectionData = {
   List: [
     {
-      id: "1",
+      id: 1,
       plan: "Proffestional",
       price: "$19",
       description: "Reporting and organization for teams upto 10 team members",
     },
     {
-      id: "2",
+      id: 2,
       plan: "Business",
       price: "$39",
       description: "Reporting and organization for teams upto 10 team members",
     },
     {
-      id: "3",
+      id: 3,
       plan: "Enterprise",
       price: "$99",
       description: "Reporting and organization for teams upto 10 team members",

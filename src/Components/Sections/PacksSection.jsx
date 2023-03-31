@@ -4,31 +4,31 @@ import { useGetStarted } from "../../Context/GetStartedContext";
 
 const PacksSection = () => {
   const { List } = PacksSectionData;
-  const { addToCart } = useGetStarted();
+  const { increaseCartQuantity, id } = useGetStarted();
   return (
     <div className="mt-[-10%] p100-section">
       <div className="Wrapper grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
         {List.map((item) => {
           const { plan, price, id, description } = item;
-          const index = id;
+          const itemId = id;
           return (
             <div
               key={id}
               style={{
-                backgroundColor: `${index == 2 ? "#466EF0" : "#FFFFFF"}`,
+                backgroundColor: `${itemId == 2 ? "#466EF0" : "#FFFFFF"}`,
               }}
               className={" rounded-2xl p-10"}
             >
               <span
                 className="text-xl fw-500"
-                style={{ color: `${index == 2 ? "white" : "#575F72"}` }}
+                style={{ color: `${itemId == 2 ? "white" : "#575F72"}` }}
               >
                 {plan}
               </span>
               <div>
                 <h1
                   className={`text-4xl ${
-                    index == 2 ? "primary-clr" : "secondary-clr"
+                    itemId == 2 ? "primary-clr" : "secondary-clr"
                   } fw-600`}
                 >
                   {price}
@@ -36,14 +36,14 @@ const PacksSection = () => {
                 </h1>
                 <p
                   className="leading-8 max-w-[300px] fw-500"
-                  style={{ color: `${index == 2 ? "white" : "#575F72"}` }}
+                  style={{ color: `${itemId == 2 ? "white" : "#575F72"}` }}
                 >
                   {description}{" "}
                 </p>
                 <button
-                  onClick={() => addToCart(id)}
+                  onClick={() => increaseCartQuantity(id)}
                   className={`mt-6 ${
-                    index == 2
+                    itemId == 2
                       ? "secondary-clr bg-primary-clr"
                       : "primary-clr bg-color3"
                   } py-6 px-8 fw-600 text-lg rounded-2xl hover:opacity-70 duration-300`}

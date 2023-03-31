@@ -1,33 +1,36 @@
 import { createContext, useState, useContext } from "react";
-import ItemsInCart from "../Components/Sections/ItemsInCart";
+
+import InsideCart from "../Components/Sections/InsideCart";
 
 const GetStartedContext = createContext({});
 
 const GetStartedProvider = ({ children }) => {
   const [items, setItems] = useState([]);
 
+  // cartQuantity
+  const cartQuantity = items.reduce((quantity, e) => e.quantity + quantity, 0);
+
   // getItemsQuantity
   const getItemsQuantity = (id) => {
     return items.find((e) => e.id === id)?.quantity || 0;
   };
 
-  // addToCart
-  const addToCart = (id) => {
+  // increaseCartQuantity
+  const increaseCartQuantity = (id) => {
     setItems((currItems) => {
-      if (currItems.find((e) => e.id === id) == null) {
+      if (currItems.find((item) => item.id === id) == null) {
         return [...currItems, { id, quantity: 1 }];
       } else {
-        return currItems.map((e) => {
-          if (e.id == id) {
-            return { ...e, quantity: e.quantity + 1 };
+        return currItems.map((item) => {
+          if (item.id === id) {
+            return { ...item, quantity: item.quantity + 1 };
           } else {
-            return e;
+            return item;
           }
         });
       }
     });
   };
-
   // decreaseCartQuantity
   const decreaseCartQuantity = (id) => {
     setItems((currItems) => {
@@ -35,7 +38,7 @@ const GetStartedProvider = ({ children }) => {
         return currItems.filter((e) => e.id !== id);
       } else {
         return currItems.map((e) => {
-          if (e.id == id) {
+          if (e.id === id) {
             return { ...e, quantity: e.quantity - 1 };
           } else {
             return e;
@@ -54,13 +57,14 @@ const GetStartedProvider = ({ children }) => {
       value={{
         items,
         getItemsQuantity,
-        addToCart,
+        increaseCartQuantity,
         decreaseCartQuantity,
         removeItem,
+        cartQuantity,
       }}
     >
       {children}
-      <ItemsInCart />
+      <InsideCart />
     </GetStartedContext.Provider>
   );
 };
