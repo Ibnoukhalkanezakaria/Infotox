@@ -28,7 +28,7 @@ const ShippingSection = () => {
         <p className="color8 m-auto max-w-[500px] py-6 leading-7 fw-500">
           {description}
         </p>
-        <div className="flex flex-col justify-center m-auto">
+        <div className="flex flex-col justify-center m-auto ">
           <div className="grid md:grid-cols-2 grid-cols-1 p100-section gap-16">
             <div>
               <div className="relative ">

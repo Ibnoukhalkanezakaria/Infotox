@@ -4,7 +4,7 @@ import { useGetStarted } from "../../Context/GetStartedContext";
 
 const PacksSection = () => {
   const { List } = PacksSectionData;
-  const { increaseCartQuantity, id } = useGetStarted();
+  const { increaseCartQuantity } = useGetStarted();
   return (
     <div className="mt-[-10%] p100-section">
       <div className="Wrapper grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">

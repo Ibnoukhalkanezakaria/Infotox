@@ -12,7 +12,7 @@ const InsideCart = () => {
         {items.map((item) => {
           const oneItem = List.find((i) => i.id === item.id);
           if (oneItem == null) return null;
-          const { plan, price, description, id } = oneItem;
+          const { plan, price, id } = oneItem;
           return (
             <div key={item.id}>
               <div className="px-8 py-8 border-b-[1px] border-[#d1d6e479]">

@@ -43,7 +43,7 @@ const Slider = () => {
           Make it easy with Infonux.
         </p>
       </div>
-      <div className="Wrapper relative ">
+      <div className="Wrapper relative mt-8">
         <img
           src={icon1}
           alt="icon"
@@ -86,7 +86,7 @@ const Slider = () => {
             const { cmt, name, jobTitle } = item;
             return (
               <SwiperSlide key={i}>
-                <div className="mt-8 primary-clr w-full sm:max-w-[400px] bg-primary-clr p-10 rounded-3xl">
+                <div className="mt-4 primary-clr w-full sm:max-w-[400px] bg-primary-clr p-10 rounded-3xl">
                   <q className="secondary-clr text-lg fw-600 leading-7">
                     {cmt}
                   </q>
@@ -106,7 +106,7 @@ const Slider = () => {
             );
           })}
         </Swiper>
-        <div className="flex gap-6 absolute right-0 top-[-20%]">
+        <div className="flex gap-6 absolute right-0 top-[-20%] ">
           <div
             onClick={() => handlePrev()}
             className={`cursor-pointer  border border-[var(--primary-clr)] rounded-full w-[50px] h-[50px] flex items-center justify-center`}

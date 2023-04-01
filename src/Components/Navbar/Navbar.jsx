@@ -47,11 +47,11 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <div
-            onClick={() => setShow(!show)}
-            className="flex md:gap-8 gap-2 items-center"
-          >
-            <div className="relative cursor-pointer">
+          <div className="flex md:gap-8 gap-2 items-center">
+            <div
+              className="relative cursor-pointer"
+              onClick={() => setShow(!show)}
+            >
               <span className="primary-clr fw-600 text-lg flex gap-4 ">
                 <FaShoppingCart /> Cart
               </span>
