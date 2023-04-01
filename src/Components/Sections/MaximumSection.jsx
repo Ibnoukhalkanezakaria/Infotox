@@ -12,7 +12,11 @@ const MaximumSection = () => {
     <div className="p50-section bg-secondary-clr overflow-hidden">
       <div className="Wrapper2  flex justify-center flex-row m-auto">
         <div className="m-auto md:grid-cols-2 grid-cols-1 items-center grid justify-center  p100-section gap-8 ">
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             <h2 className="primary-clr fw-600 sm:text-5xl text-4xl sm:leading-[80px] max-w-[500px]">
               Get maximum growth with us
             </h2>
@@ -31,7 +35,12 @@ const MaximumSection = () => {
               );
             })}
           </div>
-          <div className=" relative rounded-3xl bg-[#F5F7FB]  h-[550px] max-w-[100%] w-[550px]">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="800"
+            className="relative rounded-3xl bg-[#F5F7FB]  h-[550px] max-w-[100%] w-[550px]"
+          >
             <img
               src={image1}
               alt="image"
@@ -45,8 +54,22 @@ const MaximumSection = () => {
           "
               />
             </div>
-            <img src={icon1} alt="" className="absolute bottom-0 left-[-15%]" />
-            <img src={icon2} alt="" className="absolute right-0 top-[-10%] " />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="300"
+              src={icon1}
+              alt=""
+              className="absolute bottom-0 left-[-15%]"
+            />
+            <img
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="300"
+              src={icon2}
+              alt=""
+              className="absolute right-0 top-[-10%] "
+            />
           </div>
         </div>
       </div>

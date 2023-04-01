@@ -12,12 +12,36 @@ const HeroHome = () => {
   return (
     <div className="bg-secondary-clr p100-section overflow-hidden">
       <div className="Wrapper text-center relative">
-        <img src={icon1} alt="icon1" className="absolute right-0 top-12" />
-        <img src={icon2} alt="icon1" className="absolute left-0 top-[20%]" />
-        <h1 className="relative z-40 primary-clr fw-600 md:text-5xl text-3xl m-auto max-w-[800px]">
+        <img
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="300"
+          src={icon1}
+          alt="icon1"
+          className="absolute right-0 top-12"
+        />
+        <img
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="300"
+          src={icon2}
+          alt="icon1"
+          className="absolute left-0 top-[20%]"
+        />
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          className="relative z-40 primary-clr fw-600 md:text-5xl text-3xl m-auto max-w-[800px]"
+        >
           {title}
         </h1>
-        <p className="relative z-40 color7 m-auto max-w-[500px] py-6 leading-7 fw-500">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="500"
+          className="relative z-40 color7 m-auto max-w-[500px] py-6 leading-7 fw-500"
+        >
           {description}
         </p>
         <Link to="/pricing">
@@ -30,7 +54,10 @@ const HeroHome = () => {
             <img
               src={heroImage}
               alt="heroImage pt-8"
-              className="w-[1100px]  m-auto "
+              className="w-[1100px] m-auto "
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="500"
             />
           </div>
           <img

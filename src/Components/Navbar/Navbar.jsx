@@ -16,11 +16,15 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [disabled, setdisabled] = useState(false);
   const { cartQuantity } = useGetStarted();
+
+  const fresh = () => {
+    window.location.reload();
+  };
   return (
     <div className=" relative z-50">
       <nav className="bg-secondary-clr ">
         <div className="Wrapper flex justify-between items-center py-8">
-          <div className="logo" aria-label="logo">
+          <div onClick={() => fresh()} className="logo" aria-label="logo">
             <Link to="/">
               <img src={Logo} alt="logo" />
             </Link>
