@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavbarData } from "../../Data/data";
 import Logo from "../../assets/Logo-company.svg";
 import { Link } from "react-router-dom";
@@ -17,14 +17,11 @@ const Navbar = () => {
   const [disabled, setdisabled] = useState(false);
   const { cartQuantity } = useGetStarted();
 
-  const fresh = () => {
-    window.location.reload();
-  };
   return (
     <div className=" relative z-50">
       <nav className="bg-secondary-clr ">
         <div className="Wrapper flex justify-between items-center py-8">
-          <div onClick={() => fresh()} className="logo" aria-label="logo">
+          <div className="logo" aria-label="logo">
             <Link to="/">
               <img src={Logo} alt="logo" />
             </Link>

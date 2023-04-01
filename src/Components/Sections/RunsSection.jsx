@@ -9,13 +9,30 @@ const RunsSection = () => {
   return (
     <div className="bg-primary-clr p100-section">
       <div className="Wrapper">
-        <h1 className="secondary-clr fw-600 sm:text-5xl text-4xl sm:leading-[80px] max-w-[600px]">
+        <h1
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="800"
+          className="secondary-clr fw-600 sm:text-5xl text-4xl sm:leading-[80px] max-w-[600px]"
+        >
           {title}
         </h1>
-        <p className="color8 max-w-[600px] leading-7 fw-500">{description}</p>
+        <p
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="800"
+          className="color8 max-w-[600px] leading-7 fw-500"
+        >
+          {description}
+        </p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-14 pt-16 items-center">
           <div>
-            <div className="relative">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              className="relative"
+            >
               <img src={image} alt="image" className="z-40 relative" />
               <img
                 src={icon1}
@@ -29,7 +46,12 @@ const RunsSection = () => {
               />
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-10">
+          <div
+            data-aos="fade-up-right"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            className="grid sm:grid-cols-2 grid-cols-1 gap-10"
+          >
             {List.map((item, i) => {
               const { name, description } = item;
               return (

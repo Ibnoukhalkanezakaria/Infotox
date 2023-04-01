@@ -33,7 +33,12 @@ const Slider = () => {
 
   return (
     <div className="bg-secondary-clr p100-section overflow-hidden">
-      <div className="Wrapper">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="800"
+        className="Wrapper"
+      >
         <h2 className="sm:text-5xl text-4xl sm:leading-[80px] primary-clr fw-700">
           Why choose Infotox
         </h2>

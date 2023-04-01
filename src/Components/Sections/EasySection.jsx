@@ -12,7 +12,7 @@ const EasySection = () => {
       <div className="Wrapper2  flex justify-center flex-row m-auto">
         <div className="m-auto md:grid-cols-2 grid-cols-1 items-center grid justify-center  p100-section gap-6 ">
           <div>
-            <h2 className="secondary-clr fw-600 fw-600 text-5xl max-w-[500px] leading-[80px]">
+            <h2 className="secondary-clr fw-600 fw-600 sm:text-5xl text-3xl  max-w-[500px] sm:leading-[80px]">
               Ship easy with our framework
             </h2>
             <p className="color8 leading-7 pt-8 pb-8 max-w-[450px]">
@@ -50,10 +50,9 @@ const EasySection = () => {
           showVideo ? "block" : "hidden"
         } bg-[#000000af] fixed top-0 w-full h-screen z-[9999] overflow-hidden right-0 left-0 bottom-0`}
       >
-        <div className="translate-50 absolute left-[50%] top-[50%]">
+        <div className="absolute left-[50%] top-[50%] translate-50 max-w-[100%] w-[900px] h-[515px]">
           <iframe
-            Width="900"
-            height="515"
+            className="contain w-[100%] h-[100%]"
             src="https://www.youtube.com/embed/O5TdnuUhIgs"
             title="YouTube video player"
             frameborder="0"

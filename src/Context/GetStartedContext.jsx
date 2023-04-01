@@ -52,6 +52,7 @@ const GetStartedProvider = ({ children }) => {
   const removeItem = (id) => {
     setItems((currItems) => currItems.filter((e) => e.id !== id));
   };
+
   return (
     <GetStartedContext.Provider
       value={{

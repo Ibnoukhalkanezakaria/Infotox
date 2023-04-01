@@ -8,11 +8,11 @@ import FeaturesSection from "../../Components/Sections/FeaturesSection";
 const Pricing = () => {
   return (
     <>
-      <HeroPricing />
-      <PacksSection />
+      {/* <HeroPricing /> */}
+      {/* <PacksSection /> */}
       <FeaturesSection />
-      <Slider />
-      <RunsSection />
+      {/* <Slider /> */}
+      {/* <RunsSection /> */}
     </>
   );
 };

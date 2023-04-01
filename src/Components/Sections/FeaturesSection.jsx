@@ -10,18 +10,18 @@ const FeaturesSection = () => {
         <h1 className="fw-500 text-5xl items-center secondary-clr leading-3">
           Features
         </h1>
-        <div className="flex flex-row gap-6 py-6">
-          <div className="basis-1/2">
+        <div className="flex md:flex-row flex-wrap gap-6 py-6 text-center justify-center">
+          <div>
             <span className="fw-600 text-xl secondary-clr ">Plan Features</span>
           </div>
-          <div className="basis-1/4">
-            <span className="fw-600 text-xl secondary-clr ">Plan Features</span>
+          <div>
+            <span className="fw-600 text-xl secondary-clr ">Professional</span>
           </div>
-          <div className="basis-1/4">
-            <span className="fw-600 text-xl secondary-clr ">Plan Features</span>
+          <div>
+            <span className="fw-600 text-xl secondary-clr ">Premium</span>
           </div>
-          <div className="basis-1/4">
-            <span className="fw-600 text-xl secondary-clr ">Plan Features</span>
+          <div>
+            <span className="fw-600 text-xl secondary-clr ">Entreprise</span>
           </div>
         </div>
         <hr />

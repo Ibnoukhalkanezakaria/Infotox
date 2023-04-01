@@ -7,7 +7,7 @@ const LatestBlogs = () => {
   return (
     <div className="bg-primary-clr p100-section">
       <div className="Wrapper">
-        <h1 className="secondary-clr sm:text-5xl text-4xl max-w-[500px] fw-600">
+        <h1 className="secondary-clr sm:text-5xl text-3xl max-w-[500px] fw-600">
           {title}
         </h1>
         <p className="max-w-[400px] leading-7 color8 fw-500">{description}</p>

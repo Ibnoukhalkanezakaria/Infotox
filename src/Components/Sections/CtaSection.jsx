@@ -14,15 +14,30 @@ const CtaSection = () => {
       />
       <img src={stick3} alt="stick" className="absolute right-[-50px]" />
       <div className="Wrapper text-center">
-        <h1 className="relative primary-clr sm:text-5xl text-4xl fw-600 text-center max-w-[780px] sm:leading-[80px] m-auto">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+          className="relative primary-clr sm:text-5xl text-4xl fw-600 text-center max-w-[780px] sm:leading-[80px] m-auto"
+        >
           Let’s see Infotux in action all for free!
         </h1>
-        <p className="text-center color7 m-auto max-w-[400px] py-6 leading-7 fw-500">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="800"
+          className="text-center color7 m-auto max-w-[400px] py-6 leading-7 fw-500"
+        >
           Track all sales communication in one screen and make your potential
           customers feel heard.
         </p>
         <Link to="/pricing">
-          <PrimaryButton className="mt-6 relative">
+          <PrimaryButton
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            className="mt-6 relative"
+          >
             Get started for free
           </PrimaryButton>
         </Link>

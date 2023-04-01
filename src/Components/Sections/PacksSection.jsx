@@ -7,7 +7,12 @@ const PacksSection = () => {
   const { increaseCartQuantity } = useGetStarted();
   return (
     <div className="mt-[-10%] p100-section">
-      <div className="Wrapper grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="500"
+        className="Wrapper grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10"
+      >
         {List.map((item) => {
           const { plan, price, id, description } = item;
           const itemId = id;
@@ -17,7 +22,7 @@ const PacksSection = () => {
               style={{
                 backgroundColor: `${itemId == 2 ? "#466EF0" : "#FFFFFF"}`,
               }}
-              className={" rounded-2xl p-10"}
+              className={"bg-shadow2 rounded-2xl p-10"}
             >
               <span
                 className="text-xl fw-500"
