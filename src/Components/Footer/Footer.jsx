@@ -25,7 +25,9 @@ const Footer = () => {
               Infotox is one of the most reliable delievery patlform magement
               service to automate your network.
             </p>
-            <PrimaryButton className="mt-6">Get Started</PrimaryButton>
+            <Link to="/pricing">
+              <PrimaryButton className="mt-6">Get Started</PrimaryButton>
+            </Link>
             <div className="flex pt-10 gap-4">
               <AiFillLinkedin className="text-2xl secondary-clr" />
               <AiOutlineTwitter className="text-2xl secondary-clr" />
