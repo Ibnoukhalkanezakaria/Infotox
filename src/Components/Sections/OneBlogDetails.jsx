@@ -9,7 +9,7 @@ const OneBlogDetails = () => {
   const { oneItem } = useParams();
   return (
     <div className="p50-section">
-      <div className="max-w-[100%] w-[1000px] px-[4rem] m-auto">
+      <div className="max-w-[100%] w-[1000px] sm:px-[4rem] px-[2rem] m-auto">
         <p className="fw-500 color8 leading-7 pb-6 ">
           In fact, without a content marketing strategy in place, companies find
           it hard to put their brand before the public effectively. Due to the
