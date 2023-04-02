@@ -8,8 +8,6 @@ const HeroIntegrate = () => {
 
   const [submited, setSubmited] = useState(false);
 
-  const [isLoading, setLoading] = useState(false);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmited(true);
@@ -38,7 +36,7 @@ const HeroIntegrate = () => {
                   type="text"
                   placeholder="Entre app name"
                   required
-                  className="bg-transparent md:focus:text-left focus:text-center border border-[#3B424D] rounded-2xl focus:outline-none placeholder:text-[#59606B] placeholder:bg-transparent md:placeholder:text-left placeholder:text-center p-4 "
+                  className="bg-transparent md:focus:text-left focus:text-center border focus:text-white border-[#3B424D] rounded-2xl focus:outline-none placeholder:text-[#59606B] placeholder:bg-transparent md:placeholder:text-left placeholder:text-center p-4 "
                 />
                 <input
                   type="submit"

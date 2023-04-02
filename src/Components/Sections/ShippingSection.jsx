@@ -124,6 +124,7 @@ const ShippingSection = () => {
                     src={icon2}
                     alt="icon"
                     className="absolute top-0 left-[-30%]
+                
               "
                   />
                 </div>

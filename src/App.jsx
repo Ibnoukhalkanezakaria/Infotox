@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import OneBlog from "./Components/Sections/OneBlog";
 import CtaSection from "./Components/Sections/CtaSection";
 import GetStartedProvider from "./Context/GetStartedContext";
+import Error from "./Pages/Error/Error";
 
 // import inimation on scroll
 import Aos from "aos";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/integration" element={<Integration />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:oneItem" element={<OneBlog />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <CtaSection />
         <Footer />
