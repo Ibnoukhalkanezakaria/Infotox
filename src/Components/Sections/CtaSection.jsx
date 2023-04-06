@@ -1,8 +1,9 @@
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
+
+import { Link } from "react-router-dom";
 import stick2 from "../../assets/Cta/icon-2.svg";
 import stick3 from "../../assets/Cta/icon-3.svg";
-import { Link } from "react-router-dom";
 
 const CtaSection = () => {
   return (
