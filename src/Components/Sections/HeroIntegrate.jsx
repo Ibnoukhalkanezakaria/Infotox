@@ -6,12 +6,18 @@ import icon2 from "../../assets/Intregrate/icon2.svg";
 const HeroIntegrate = () => {
   const { title, description } = HeroIntegrateData;
 
-  const [submited, setSubmited] = useState(false);
+  const [showForm, setShowForm] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSubmited(true);
+    setShowForm(false);
+    setShowMessage(true);
   };
+
+  setTimeout(() => {
+    setShowMessage(false);
+  }, 1300);
 
   return (
     <div className="bg-secondary-clr p100-section overflow-hidden">
@@ -25,11 +31,7 @@ const HeroIntegrate = () => {
           {description}
         </p>
         <div className="max-w-[100%]">
-          {submited ? (
-            <p className="bg-color3 primary-clr max-w-[330px] m-auto py-4 px-8 fw-500 text-md rounded-2xl">
-              Thanks for the request 🎉
-            </p>
-          ) : (
+          {showForm && (
             <form onSubmit={handleSubmit} className="flex justify-center pt-8">
               <div className="flex md:flex-row flex-col gap-4  w-[350px]  max-w-[100%]">
                 <input
@@ -40,11 +42,21 @@ const HeroIntegrate = () => {
                 />
                 <input
                   type="submit"
-                  value={`${submited ? "Please Wait ..." : "Request now"} `}
+                  value="Request now"
                   className="md:ml-[-50px] w-full md:w-auto bg-color3 cursor-pointer primary-clr py-4 px-4 fw-500 text-md rounded-2xl duration-300"
                 />
               </div>
             </form>
+          )}
+          {showMessage && (
+            <p className="bg-color3 primary-clr max-w-[330px] m-auto py-4 px-8 fw-500 text-md rounded-2xl">
+              Please Wait ...
+            </p>
+          )}
+          {!showForm && !showMessage && (
+            <p className="bg-color3 primary-clr max-w-[330px] m-auto py-4 px-8 fw-500 text-md rounded-2xl">
+              Thanks for the request 🎉
+            </p>
           )}
         </div>
       </div>
