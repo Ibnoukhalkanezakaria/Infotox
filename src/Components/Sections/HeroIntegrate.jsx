@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HeroIntegrateData } from "../../Data/data";
 import icon1 from "../../assets/Intregrate/icon1.svg";
 import icon2 from "../../assets/Intregrate/icon2.svg";

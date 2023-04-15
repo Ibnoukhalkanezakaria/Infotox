@@ -61,9 +61,11 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <button className="hover:opacity-60 duration-300 secondary-clr bg-primary-clr py-5 px-5 text-lg fw-600 rounded-2xl sm:block hidden">
-                Get Started
-              </button>
+              <Link to="/pricing">
+                <button className="hover:opacity-60 duration-300 secondary-clr bg-primary-clr py-5 px-5 text-lg fw-600 rounded-2xl sm:block hidden">
+                  Get Started
+                </button>
+              </Link>
             </div>
             <div
               onClick={() => setOpen(!open)}
@@ -115,6 +117,7 @@ const Navbar = () => {
               >
                 Continue to Checkout
               </PrimaryButton>
+
               <p
                 className={`text-center pt-6 text-[#DC4544] ${
                   disabled ? "block" : "hidden"

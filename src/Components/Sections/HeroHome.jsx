@@ -45,7 +45,12 @@ const HeroHome = () => {
           {description}
         </p>
         <Link to="/pricing">
-          <PrimaryButton className="mt-4 mb-14">
+          <PrimaryButton
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            className="mt-4 mb-14"
+          >
             Get started for free
           </PrimaryButton>
         </Link>
