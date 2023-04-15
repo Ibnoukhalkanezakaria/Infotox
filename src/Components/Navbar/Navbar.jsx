@@ -86,7 +86,7 @@ const Navbar = () => {
               <AiOutlineClose className="text-2xl cursor-pointer" />
             </div>
           </div>
-          <div className="h-[300px] overflow-auto border-t-[1px] border-b-[1px] border-[#8f8f8f79]">
+          <div className="max-h-[300px] overflow-auto border-t-[1px] border-b-[1px] border-[#8f8f8f79]">
             {cartQuantity > 0 ? (
               <div>
                 <InsideCart />
@@ -101,7 +101,7 @@ const Navbar = () => {
             <div className="py-10 px-8">
               <div className="flex justify-between">
                 <div>
-                  <span>Subtotal:</span>
+                  <span>Subtotal :</span>
                 </div>
                 <div>
                   <span className="secondary-clr fw-600 text-lg block">

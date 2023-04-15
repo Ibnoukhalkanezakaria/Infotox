@@ -22,7 +22,7 @@ const PacksSection = () => {
               style={{
                 backgroundColor: `${itemId == 2 ? "#466EF0" : "#FFFFFF"}`,
               }}
-              className={"bg-shadow2 rounded-2xl p-10"}
+              className={"rounded-2xl p-10"}
             >
               <span
                 className="text-xl fw-500"

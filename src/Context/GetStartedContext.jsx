@@ -1,11 +1,17 @@
-import { createContext, useState, useContext } from "react";
-
-import InsideCart from "../Components/Sections/InsideCart";
+import { createContext, useState, useContext, useEffect } from "react";
 
 const GetStartedContext = createContext({});
 
+const intialItems = localStorage.getItem("shopping-cart")
+  ? JSON.parse(localStorage.getItem("shopping-cart"))
+  : [];
+
 const GetStartedProvider = ({ children }) => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(intialItems);
+
+  useEffect(() => {
+    localStorage.setItem("shopping-cart", JSON.stringify(items));
+  }, [items]);
 
   // cartQuantity
   const cartQuantity = items.reduce((quantity, e) => e.quantity + quantity, 0);
@@ -65,7 +71,6 @@ const GetStartedProvider = ({ children }) => {
       }}
     >
       {children}
-      <InsideCart />
     </GetStartedContext.Provider>
   );
 };
