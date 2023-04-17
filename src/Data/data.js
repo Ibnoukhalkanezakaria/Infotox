@@ -216,74 +216,21 @@ export const PacksSectionData = {
     {
       id: 1,
       plan: "Proffestional",
-      price: "$19",
+      price: 19,
       description: "Reporting and organization for teams upto 10 team members",
     },
     {
       id: 2,
       plan: "Business",
-      price: "$39",
+      price: 39,
       description: "Reporting and organization for teams upto 10 team members",
     },
     {
       id: 3,
       plan: "Enterprise",
-      price: "$99",
+      price: 99,
       description: "Reporting and organization for teams upto 10 team members",
     },
-  ],
-};
-
-export const FeaturesSectionData = {
-  PlanFeatures: [
-    {
-      name: "Projects",
-      Professional: true,
-      Premium: true,
-      Entreprise: true,
-    },
-    // {
-    //   name: "Main Delivery Network",
-    //   Professional: true,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Advance AI based tracking",
-    //   Professional: false,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Personal Trainee",
-    //   Professional: true,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Access to Elon’s satellite",
-    //   Professional: false,
-    //   Premium: false,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Personal Truck for Delivery",
-    //   Professional: true,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Premium Software support",
-    //   Professional: false,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
-    // {
-    //   name: "Access to user API",
-    //   Professional: false,
-    //   Premium: true,
-    //   Entreprise: true,
-    // },
   ],
 };
 

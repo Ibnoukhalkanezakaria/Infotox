@@ -8,13 +8,11 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useGetStarted } from "../../Context/GetStartedContext";
 import InsideCart from "../Sections/InsideCart";
 
-import PrimaryButton from "../Buttons/PrimaryButton";
-
 const Navbar = () => {
   const { navLinks } = NavbarData;
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
-  const [disabled, setdisabled] = useState(false);
+
   const { cartQuantity } = useGetStarted();
 
   return (
@@ -88,7 +86,7 @@ const Navbar = () => {
               <AiOutlineClose className="text-2xl cursor-pointer" />
             </div>
           </div>
-          <div className="max-h-[300px] overflow-auto border-t-[1px] border-b-[1px] border-[#8f8f8f79]">
+          <div className="  border-t-[1px] border-b-[1px] border-[#8f8f8f79]">
             {cartQuantity > 0 ? (
               <div>
                 <InsideCart />
@@ -99,36 +97,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          {cartQuantity > 0 ? (
-            <div className="py-10 px-8">
-              <div className="flex justify-between">
-                <div>
-                  <span>Subtotal :</span>
-                </div>
-                <div>
-                  <span className="secondary-clr fw-600 text-lg block">
-                    $1,199.00 USD
-                  </span>
-                </div>
-              </div>
-              <PrimaryButton
-                onClick={() => setdisabled(true)}
-                className="flex justify-center m-auto mt-8 w-full"
-              >
-                Continue to Checkout
-              </PrimaryButton>
-
-              <p
-                className={`text-center pt-6 text-[#DC4544] ${
-                  disabled ? "block" : "hidden"
-                }`}
-              >
-                Checkout is disabled on this site.
-              </p>
-            </div>
-          ) : (
-            ""
-          )}
         </div>
       </div>
     </div>
