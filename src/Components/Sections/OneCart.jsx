@@ -23,7 +23,7 @@ const OneCart = ({ id }) => {
               {oneItem.plan}
             </span>
             <span className="pb-3 secondary-clr fw-500 text-md block">
-              {oneItem.price} USD x{" "}
+              ${oneItem.price} x{" "}
               <span className="font-sm text-[11px]">{quantity}</span>
             </span>
           </div>
